@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<title>Geekdom Food and Games</title>
+		<meta name="description" content="Game Bar and Café" />	
+		<link rel="icon" type="image/jpg" href="geek-dom-ec.jpg"/>
+		<meta name="keywords" content="Bar,cafe,games,game bar and cafe"/>
+	</head>
+	
+	<body>
+		<header>
+			<figure><img src="geek-dom-ec.jpg" alt="Logo"/></figure>
+			<h1>Geekdom Food and Games</h1>
+			<h2>Game Bar and café</h2>
+		</header>
+		
+		<form id="form1" method="post" autocomplete="on">
+			<label for="nombre">Nombre: </label>
+			<input id="nombre" type="text" autocomplete="name" required>
+			<br>
+			
+			<label for="correo">Correo: </label>
+			<input id="correo" type="email" autocomplete="email" required>
+			<br>
+			
+			<label for="producto">Producto a comprar</label>
+			<input id="producto" list="productos" name="misProductos">
+			<datalist id="productos">
+				<option value="hamburguesa">
+				<option value="café">
+				<option value="cerveza">
+				<option value="camiseta">
+				<option value="gorra">
+			</datalist>
+			
+			<br>
+			<label for="fecha">Fecha de entrega: </label>
+			<input type="date" id="fecha">
+			
+			<input type="submit" value="Enviar">
+		</form>
+		
+		<footer>Centro Comercial Las Terrazas, Local 2.</footer>
+	</body>
+	
+	
+</html>
