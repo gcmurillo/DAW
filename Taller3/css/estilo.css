@@ -48,7 +48,7 @@ aside li[name="fork"]{
 	list-style-image: url("https://goo.gl/y0yaro");
 }
 
-nav:hover ul li	{
+nav > ul > li > a:hover{
 	color: green;
 }
 
