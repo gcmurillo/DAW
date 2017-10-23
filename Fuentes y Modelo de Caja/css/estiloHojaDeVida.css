@@ -24,15 +24,11 @@ span#foto img{
 	width: 8%;
 	margin-left: 0.5%;
 	float: left;
-}
-
-span{
-	clear: both;
+	margin-right: 4%;
 }
 
 span#datos {
-	width: 30%;
-	margin-left: 5%;
+	overflow: hidden;
 }
 
 div#personales h2{
