@@ -1,0 +1,66 @@
+body{
+	margin: 0% 25% 0%;
+}
+
+header > h1{
+	text-align: center;
+}
+
+header{
+	background-color: #cbccc1
+}
+
+
+div.bloques h2{
+	margin: 5px;
+}
+
+section#contenido div{
+	border: 1pt solid gray;
+	margin: 5px;
+}
+
+span#foto img{
+	width: 8%;
+	margin-left: 0.5%;
+	float: left;
+}
+
+span{
+	clear: both;
+}
+
+span#datos {
+	width: 30%;
+	margin-left: 5%;
+}
+
+div#personales h2{
+	text-align: center;
+}
+
+
+div#educacion h4{
+	font-style: italic;
+}
+
+div.hab > div{
+	display: inline-block;
+	border-radius: 5em;
+	padding: .5em
+}
+
+div.hab div:first-child{
+	background-color: blue;
+	color: white;
+}
+
+div.hab div:last-child{
+	box-shadow: 10px 5px 5px gray;
+	margin-left: none;
+}
+
+div#habilidad > div.hab{
+	display: inline-block;
+	border-radius: 1em;
+}
