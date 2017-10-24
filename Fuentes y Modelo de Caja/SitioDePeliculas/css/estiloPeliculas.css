@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Lobster');
+
+header{
+	font-family: Anton;
+	color:  #414239;
+	font-size: 4em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+div.peliculas h2{
+	font-family: Lobster;
+	color: #9e0947;
+	font-size: 2.5em;
+}
+
+div.peliculas{
+	font-family: Verdana;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #d7d8cb;
+	margin-bottom: 1%;
+	text-align: justify;
+}
+
+span#imagen img{
+	width: 15%;
+	margin-right: 1%;
+	float: left;
+	margin-bottom: 1%
+}
+
+span#imagen img:hover{
+	opacity: 0.8;
+}
+
+li[famoso="principal"]{
+	font-weight: bold;
+}
+
+li[famoso="secundario"]{
+	font-style: italic;
+}
+
+div.reparto li{
+	list-style-image: url(" https://goo.gl/6hPSSH");
+}
+
+iframe{
+	float: right;
+}
+
+div.reparto{
+	float: right;
+}
+
+div.sinopsis{
+	width: 55%;
+}
+
+div.peliculas{
+	display: inline-block;
+}

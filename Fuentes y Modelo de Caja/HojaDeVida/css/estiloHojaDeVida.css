@@ -11,6 +11,10 @@ header{
 }
 
 
+div.bloques{
+	border-radius: 10px;
+}
+
 div.bloques h2{
 	margin: 5px;
 }
@@ -43,20 +47,25 @@ div#educacion h4{
 div.hab > div{
 	display: inline-block;
 	border-radius: 5em;
-	padding: .5em
+	padding: 5px;
 }
 
 div.hab div:first-child{
-	background-color: blue;
+	background-color: #5882FA;
 	color: white;
+	position: relative;
+	text-align: center;
 }
 
 div.hab div:last-child{
 	box-shadow: 10px 5px 5px gray;
-	margin-left: none;
+	text-align: right;
+	padding-left: 35px;
+	margin-left: -50px;
+	margin-right: 40px;
 }
 
 div#habilidad > div.hab{
 	display: inline-block;
-	border-radius: 1em;
+	border: none;
 }
