@@ -19,7 +19,6 @@ div.peliculas{
 	border-style: dotted;
 	border-width: 1px;
 	border-color: #d7d8cb;
-	margin-bottom: 1%;
 	text-align: justify;
 }
 
@@ -43,7 +42,7 @@ li[famoso="secundario"]{
 }
 
 div.reparto li{
-	list-style-image: url(" https://goo.gl/6hPSSH");
+	list-style-image: url("https://goo.gl/6hPSSH");
 }
 
 iframe{
