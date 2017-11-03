@@ -1,0 +1,104 @@
+/*Box Model*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{
+	margin: 0% 25% 0%;
+}
+
+header > h1{
+	text-align: center;
+}
+
+header{
+	background-color: #cbccc1
+}
+
+
+div.bloques{
+	border-radius: 10px;
+}
+
+div.bloques h2{
+	margin: 5px;
+}
+
+div#personales p{
+	margin-left: 5%;
+}
+
+section#contenido div{
+	border: 1pt solid gray;
+	margin: 5px;
+}
+
+span#foto img{
+	width: 8%;
+	margin-left: 0.5%;
+	float: left;
+	margin-right: 4%;
+}
+
+span#foto-educacion img{
+	width: 10%;
+	margin-left: 0.5%;
+	float: left;
+	margin-right: 4%;
+	position: relative;
+}
+
+span#datos {
+	overflow: hidden;
+}
+
+div#personales h2{
+	text-align: center;
+}
+
+
+div#educacion h4{
+	font-style: italic;
+}
+
+div#universidad, div#colegio{
+	border-style: none;
+}
+
+div.hab > div{
+	display: inline-block;
+	border-radius: 5em;
+	padding: 5px;
+}
+
+div.hab div:first-child{
+	background-color: #5882FA;
+	color: white;
+	position: relative;
+	text-align: center;
+	position: absolute;
+	border-radius: 10em;
+}
+
+div.hab div:last-child{
+	box-shadow: 10px 5px 5px gray;
+	text-align: right;
+	padding-left: 35px;
+	margin-left: -50px;
+	margin-right: 40px;
+}
+
+div#habilidad > div.hab{
+	display: inline-block;
+	border: none;
+
+}
