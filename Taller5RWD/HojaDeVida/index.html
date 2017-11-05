@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title>Hoja de vida</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/estiloHojaDeVida.css">
@@ -13,20 +14,24 @@
 		
 		<section id="contenido">
 			
-			<div id="nombres" class="bloques">
-				<h2>Nombres y Apellidos</h2>
+			<div id="contenedor-nombre">
 
-				<span id="foto"><img src="foto.jpg"></span>
+				<div id="nombres" class="bloques">
+					<span id="nombre"><h2>Geancarlo Murillo</h2></span>
+					<span id="foto"><img src="foto.jpg"></span>
+					<div id="nombre-responsive-contenedor">
+						<span id="nombre-responsive">Geancarlo Murillo</span>
+					</div>
+					<span id="datos">
+						<ul>
+							<li id="carrera">Estudiante: Ing. en Ciencias Computacionales</li>
+							<li id="uni">ESPOL</li>
+							<li id="ciudad">Guayaquil - Ecuador</li>
+							<li id="zip">75894</li>
+						</ul>
+					</span>
 
-				<span id="datos">
-					<ul>
-						<li>Estudiante: Ing. en Ciencias Computacionales</li>
-						<li>ESPOL</li>
-						<li>Guayaquil - Ecuador</li>
-						<li>75894</li>
-					</ul>
-				</span>
-
+				</div>
 			</div>
 
 			<div id="personales" class="bloques">
@@ -39,10 +44,10 @@
 			
 			<div id="educacion" class="bloques">
 				<h2>Eduación</h2>
-				<div id="universidad">
+				<span id="universidad">
+					<span id="foto-educacion"><img src="espol.png"></span>
 					<h3 class="institucion">Universidad</h3>
 					<h4>2014 - 2019</h4>	
-					<span id="foto-educacion"><img src="espol.png"></span>
 					<span id="datos">
 						<ul>
 							<li>Fundamentos de Programacion</li>
@@ -52,12 +57,12 @@
 							<li>Estructuras de Datos</li>
 						</ul>	
 					</span>
-				</div>
-				<hr>
-				<div id="colegio">
+				</span>
+				<span id="colegio">
+					<span id="foto-educacion"><img src="colegio.jpg"></span>
 					<h3 class="institucion">Colegio</h3>
 					<h4>2007 - 2012</h4>
-					<span id="foto-educacion"><img src="colegio.jpg"></span>
+					
 					<span id="datos">
 						<ul>
 							<li>Matematicas</li>
@@ -66,7 +71,7 @@
 							<li>Inglés intermedio</li>
 						</ul>	
 					</span>
-				</div>
+				</span>
 				
 
 			</div>

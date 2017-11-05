@@ -27,10 +27,15 @@ header{
 
 div.bloques{
 	border-radius: 10px;
+	border: 1pt solid gray;
 }
 
 div.bloques h2{
 	margin: 5px;
+}
+
+span#nombre-responsive{
+	display: none;
 }
 
 div#personales p{
@@ -38,7 +43,6 @@ div#personales p{
 }
 
 section#contenido div{
-	border: 1pt solid gray;
 	margin: 5px;
 }
 
@@ -50,11 +54,10 @@ span#foto img{
 }
 
 span#foto-educacion img{
-	width: 10%;
+	width: 20%;
 	margin-left: 0.5%;
 	float: left;
 	margin-right: 4%;
-	position: relative;
 }
 
 span#datos {
@@ -70,9 +73,7 @@ div#educacion h4{
 	font-style: italic;
 }
 
-div#universidad, div#colegio{
-	border-style: none;
-}
+
 
 div.hab > div{
 	display: inline-block;
@@ -87,6 +88,8 @@ div.hab div:first-child{
 	text-align: center;
 	position: absolute;
 	border-radius: 10em;
+	border: 1pt solid gray;
+
 }
 
 div.hab div:last-child{
@@ -95,10 +98,92 @@ div.hab div:last-child{
 	padding-left: 35px;
 	margin-left: -50px;
 	margin-right: 40px;
+	border: 1pt solid gray;
+
 }
 
 div#habilidad > div.hab{
 	display: inline-block;
 	border: none;
+
+}
+
+
+
+@media only screen and (max-width : 480px) {
+
+	body{
+		margin:0 !important;
+	}
+
+	header > h1, li#carrera,li#uni, div#personales >h2{
+		display: none;
+	}
+
+	div.bloques{
+		background: rgb(212,227,252);
+	}
+
+	div#nombres span#datos ul{
+		padding-top: 15%;
+		padding-right: 10%;
+	}
+
+	div#nombres span#datos ul li{
+		list-style-type: none;
+		text-align: center;
+	}
+
+	div#contenedor-nombre{
+		padding-top: 5%;
+	}
+
+	div#personales{
+		text-align: center;
+		padding-right: 10%;
+	}
+
+	div#nombres{
+		height: auto;
+	}
+
+	div#nombres span#foto img{
+		border: 1pt solid gray;
+		border-radius: 10px;
+		position:absolute;
+		margin-left: 40%;
+		width: 15%;
+		box-shadow: 5px 5px 5px gray;
+		margin-top: -5%;
+	}
+
+	span#nombre{
+		display: none;
+	}
+
+	span#nombre-responsive{
+		display: initial;
+		background: rgba(153, 153, 153, 0.4);
+		border-radius: 5em;
+	}
+
+	div#nombre-responsive-contenedor{
+		padding-left: 31%;
+		padding-top: 11%;
+		padding-bottom: 0%;
+		position: absolute;
+	}
+
+	span#universidad{
+		float: left;
+		display: inline;
+	}
+
+	div#habilidad{
+		width: 70%;
+		padding-left: 20%;
+	}
+
+	
 
 }
