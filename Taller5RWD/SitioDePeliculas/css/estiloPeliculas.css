@@ -20,6 +20,7 @@ div.peliculas{
 	border-width: 1px;
 	border-color: #d7d8cb;
 	text-align: justify;
+	border-bottom: solid;
 }
 
 span#imagen img{
