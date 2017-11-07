@@ -9,49 +9,40 @@
     <meta name="author" content="">
 
     <!-- Bootstrap CSS -->
-    
-    <link rel="stylesheet" type="text/css" href="css/estiloSweet.css">
 
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estiloSweet.css">
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
 
     
 </head>
 <body>
 
 	<!-- Static navbar -->
-   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Sweet &amp; Coffee</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Nosotros</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Café</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Dulces</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Productos</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Compromiso</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Universidad del Café</a>
-	      </li>
-	    </ul>
-	    
-	  </div>
-	</nav>
+   	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sweet &amp; Coffee</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Cafe</a></li>
+            <li><a href="#">Dulces</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Compromiso</a></li>
+            <li><a href="#">Universidad del café</a></li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<!--CABECERA-->
@@ -61,116 +52,104 @@
       </div>
     </div>
     <!--CARROUSEL DE IMAGENES-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+    
+    <div class="container">
+	  <h1>Nuestros Productos.</h1>
+	  <div class="row">
+	    <div class="col-md-12">
+	      <div class="carousel slide multi-item-carousel" id="theCarousel">
+	        <div class="carousel-inner">
+	          <div class="item active">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/americano.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/cafebombon.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/cafelattecaliente.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/cafelattefrio.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/capuccino.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/capuccinocasa.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/capuccinofrio.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/espresso.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/frappelatte.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/macchiato.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/moccachino.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <div class="item">
+	            <div class="col-xs-4"><a href="#1"><img src="img/productos/oreocookieshake.jpg" class="img-responsive"></a></div>
+	          </div>
+	          <!-- add  more items here -->
+	        </div>
+	        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><<<</a>
+	        <a class="right carousel-control" href="#theCarousel" data-slide="next">>>></a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!--tipos de cafe-->
 
 	<h2 class="display-4 tipos">Tipos de café</h2>
 
-	<div class="card-group">
-	  <div class="card">
-	    <img class="card-img-top" src="" alt="Card image cap">
-	    <div class="card-body">
-	      <h4 class="card-title">Card title</h4>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	    </div>
-	  </div>
-	  <div class="card">
-	    <img class="card-img-top" src="..." alt="Card image cap">
-	    <div class="card-body">
-	      <h4 class="card-title">Card title</h4>
-	      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	    </div>
-	  </div>
-	  <div class="card">
-	    <img class="card-img-top" src="..." alt="Card image cap">
-	    <div class="card-body">
-	      <h4 class="card-title">Card title</h4>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	    </div>
-	  </div>
-	  <div class="card">
-	    <img class="card-img-top" src="" alt="Card image cap">
-	    <div class="card-body">
-	      <h4 class="card-title">Card title</h4>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	    </div>
-	  </div>
-	  <div class="card">
-	    <img class="card-img-top" src="" alt="Card image cap">
-	    <div class="card-body">
-	      <h4 class="card-title">Card title</h4>
-	      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	    </div>
-	  </div>
+	<!-- Three columns of text below the carousel -->
+	<div class="container">
+	    <div class="row cafes">
+	        <div class="col-lg-2 ">
+	          <img class="img-circle" src="img/productos/americano.jpg" width="140" height="140">
+	          <h2>Americano</h2>
+	          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-lg-2">
+	          <img class="img-circle" src="img/productos/oreocookieshake.jpg" alt="Generic placeholder image" width="140" height="140">
+	          <h2>Oreo</h2>
+	          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-lg-2">
+	          <img class="img-circle" src="img/productos/cafebombon.jpg" width="140" height="140">
+	          <h2>Cafe Bombon</h2>
+	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-lg-2">
+	          <img class="img-circle" src="img/productos/moccachino.jpg" width="140" height="140">
+	          <h2>Moccachino</h2>
+	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-lg-2">
+	          <img class="img-circle" src="img/productos/espresso.jpg" width="140" height="140">
+	          <h2>Espreso</h2>
+	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	    </div><!-- /.row -->
 	</div>
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/carrousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
+    
 </body>
 </html>
